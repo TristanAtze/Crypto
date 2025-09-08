@@ -153,6 +153,7 @@ try
     File.Delete(decryptedFile);
 
     Console.WriteLine("\n=== All async tests completed successfully! ===");
+    Console.ReadKey();
 }
 catch (Exception ex)
 {
