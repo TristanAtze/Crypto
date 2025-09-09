@@ -76,7 +76,6 @@ namespace Crypto
             return result.ToString();
         }
 
-        // Async versions
         public static async Task<string> EncryptAsync(string plaintext, string password, CancellationToken cancellationToken = default)
         {
             var encryptedBytes = await HighlySecureAuthenticatedVersionedCipher.EncryptAsync(plaintext, password, cancellationToken);
